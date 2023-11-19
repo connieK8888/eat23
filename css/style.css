@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+}
+.navbar .container-fluid{
+    background-color: #460D00;
+}
+.memberRedBg{
+    background: #f4ece7;
+}
+.tagBg{
+    background-color: #742319;
+}
+.list-group-item.activeMood{
+    border-left: solid 4px #742319!important;
+}
+.btn{
+    background-color: #742319;
+}
