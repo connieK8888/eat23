@@ -13,6 +13,15 @@ a{
 .list-group-item.activeMood{
     border-left: solid 4px #742319!important;
 }
-.btn{
+.btnEat{
+    background-color: #742319;
+}
+.card{
+    background-color: #F1EAE6;
+}
+.card .activitydate{
+    color: #B2796F;
+}
+.darkCark{
     background-color: #742319;
 }
