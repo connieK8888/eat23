@@ -33,6 +33,12 @@ background:#460d01;
 color:white;
 }
 
+.lightRed{
+    background:#B2796F;
+    color:white;
+    }
+
+
 .index_section_1{
     position: relative;
     display:flex;
@@ -85,4 +91,30 @@ color:white;
     top:240px
 }
 
+.index_section_3_title h2,
+.index_section_3_title p
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1rem
+}
+.cards_time{
+color: #b2796f;
+}
 
+.cards_area{
+    color: #717171;    
+}
+.cards_info{
+    color: #717171;
+    margin-top:1rem;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+
+/* activity page */
