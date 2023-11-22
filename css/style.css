@@ -25,3 +25,64 @@ a{
 .darkCark{
     background-color: #742319;
 }
+
+/* index */
+
+.darkRed{
+background:#460d01;
+color:white;
+}
+
+.index_section_1{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#paper{
+    position: absolute;
+    top:-700%;
+    overflow: clip;
+    display:flex;
+
+}
+
+.index_search{
+    width:500px;
+    position: absolute;
+    margin-top:-20%;
+}
+
+.form-rounded {
+    border-radius: 50rem;
+    }
+
+.index_section_2{
+    width:100%;
+    height: 100%;
+    background-image: url('/eat23/img/paper.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top:-200px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+#crabRice{
+    width: 20%;  
+    position:absolute;
+    left:5%;
+    top:20px
+}
+
+#beefNoodle{
+    width: 30%;  
+    position:absolute;
+    right:0%;
+    top:240px
+}
+
+
