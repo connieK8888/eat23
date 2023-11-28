@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動詳細頁</title>
+    <link rel="stylesheet" href="./css/cdnjs.cloudflare.com_ajax_libs_font-awesome_6.4.2_css_all.min.css">
+    <link rel="stylesheet" href="./css/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid py-2">
+        <a class="navbar-brand" href="#">
+            <img src="./img/LOGO.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">餐廳活動</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white tagBg px-3 mx-3 rounded-pill d-flex align-items-center" aria-current="page" href="#">
+                        <span class="me-3">我要揪團</span>
+                        <span class="rounded-circle p-2 d-flex align-items-center justify-content-center" style="background-color: #460D00;width: 30px;height: 30px;">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" aria-current="page" href="#">
+                        <span class="rounded-circle p-2 tagBg d-block" style="width: 40px;height: 40px;">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container py-4 my-4">
+        <div class="row justify-content-evenly">
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-between">
+                    <div class="text-white text-center" aria-current="page">
+                        <span class="rounded-circle p-2 tagBg d-flex justify-content-center align-items-center" style="width: 56px;height: 56px;">
+                            <i class="fa-solid fa-user fs-4"></i>
+                        </span>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn text-center dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 40px;">
+                            <div class="rounded-circle my-1 text-center" style="width: 4px;height: 4px;background: #717171;"></div>
+                            <div class="rounded-circle my-1 text-center" style="width: 4px;height: 4px;background: #717171;"></div>
+                            <div class="rounded-circle my-1 text-center" style="width: 4px;height: 4px;background: #717171;"></div>
+                        </button>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="#">取消報名</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card border-light mt-4">
+                    <img src="./img/img.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-white">
+                        <h4 class="card-title">勞瑞斯牛肋排餐廳</h4>
+                        <div class="cards_area card-text">106台北市大安區大安路一段116巷17號 </div>
+                        <div class="cards_time card-text">十月4日,10:00 </div>
+                    </div>
+                </div>
+                <div class="text-end d-flex justify-content-end align-items-center">
+                    <span class="rounded-circle mx-1 p-2 tagBg text-white d-flex justify-content-center align-items-center" style="width: 30px;height: 30px;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span class="rounded-circle mx-1 p-2 tagBg text-white d-flex justify-content-center align-items-center" style="width: 30px;height: 30px;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span class="rounded-circle mx-1 p-2 tagBg text-white d-flex justify-content-center align-items-center" style="width: 30px;height: 30px;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span class="mx-1">3人報名</span>
+                </div>
+                <button type="button" class="btn btnEat w-100 text-white mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">我要參加</button>
+                <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="d-flex p-3">
+                    <span class="rounded-circle mx-1 p-2 tagBg text-white d-flex justify-content-center align-items-center" style="width: 30px;height: 30px;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <div class="mx-3">
+                        <div class="fw-bold">我要報名這個聚會</div>
+                    </div>
+                </div>
+
+                <form action="">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                        <label for="floatingTextarea">留言</label>
+                    </div>
+                </form>
+        </div>
+        <div class="modal-footer border-0">
+            <div class="btnGroup text-end my-3">
+                <button type="button" class="btn btnEat text-white">我要報名</button>
+                <button type="button" class="btn btn-secondary text-white">取消</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                <div class="text-secondary text-center my-2">預算:$1000</div>
+
+                <!-- 評價留言區 -->
+                <div class="mt-5">
+                    <div class="d-flex my-3 p-3">
+                        <span class="rounded-circle mx-1 p-2 tagBg text-white d-flex justify-content-center align-items-center" style="width: 30px;height: 30px;">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <div class="mx-3">
+                            <div>蔬食天堂一直在我的美食清單裡</div>
+                            <div>想找人一起去探店～～</div>
+                            <div>蔬食天堂一直在我的美食清單裡，想找人一起去探店～～快來報名吧！</div>
+                        </div>
+                    </div>
+
+                    <form action="">
+                        <div class="form-floating mt-5">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                            <label for="floatingTextarea">留言</label>
+                        </div>
+                        <div class="btnGroup text-end my-3">
+                            <button type="button" class="btn btnEat text-white">取消</button>
+                            <button type="button" class="btn btnEat text-white">留言</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h4 class="fw-bold">瀏覽紀錄</h4>
+                <div class="mt-4">
+                    <div class="d-flex flex-wrap my-4">
+                        <div class="mx-3">
+                            <div>
+                                <img src="./img/Img-s.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-3">
+                            <h5 class="fw-bold">蔬食天堂</h5>
+                            <div class="fs-6 text-secondary">活動日期：2023/10/20</div>
+                            <div class="fs-6 text-secondary">活動時間：中午12:30</div>
+                            <div class="fs-6 text-secondary">活動地點：台北市大安區</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap my-4">
+                        <div class="mx-3">
+                            <div>
+                                <img src="./img/Img-s.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-3">
+                            <h5 class="fw-bold">蔬食天堂</h5>
+                            <div class="fs-6 text-secondary">活動日期：2023/10/20</div>
+                            <div class="fs-6 text-secondary">活動時間：中午12:30</div>
+                            <div class="fs-6 text-secondary">活動地點：台北市大安區</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap my-4">
+                        <div class="mx-3">
+                            <div>
+                                <img src="./img/Img-s.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-3">
+                            <h5 class="fw-bold">蔬食天堂</h5>
+                            <div class="fs-6 text-secondary">活動日期：2023/10/20</div>
+                            <div class="fs-6 text-secondary">活動時間：中午12:30</div>
+                            <div class="fs-6 text-secondary">活動地點：台北市大安區</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap my-4">
+                        <div class="mx-3">
+                            <div>
+                                <img src="./img/Img-s.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mx-3">
+                            <h5 class="fw-bold">蔬食天堂</h5>
+                            <div class="fs-6 text-secondary">活動日期：2023/10/20</div>
+                            <div class="fs-6 text-secondary">活動時間：中午12:30</div>
+                            <div class="fs-6 text-secondary">活動地點：台北市大安區</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./js/cdnjs.cloudflare.com_ajax_libs_font-awesome_6.4.2_js_all.min.js"></script>
+</body>
+</html>
