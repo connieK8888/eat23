@@ -3,18 +3,18 @@ let carLists = document.querySelector('.carLists');
 // 將數字月份轉換為對應的中文月份
 function ToChineseMonth(number) {
   let month = {
-    '1': '一月',
-    '2': '二月',
-    '3': '三月',
-    '4': '四月',
-    '5': '五月',
-    '6': '六月',
-    '7': '七月',
-    '8': '八月',
-    '9': '九月',
-    '10': '十月',
-    '11': '十一月',
-    '12': '十二月'
+    '1': '一',
+    '2': '二',
+    '3': '三',
+    '4': '四',
+    '5': '五',
+    '6': '六',
+    '7': '七',
+    '8': '八',
+    '9': '九',
+    '10': '十',
+    '11': '十一',
+    '12': '十二'
   };
   let result = month[number] || ''; // 如果沒有對應的中文月份，返回空字串
   console.log(`ToChineseMonth(${number}) returns: ${result}`);
@@ -34,16 +34,13 @@ axios.get('https://raw.githubusercontent.com/ricktsaiii/eat_json/main/eat_activi
 function renderData(response) {
   let newCards = "";
   response.forEach(function (item) {
-    console.log(`Original month: ${item.time.month}`);
     let month = ToChineseMonth(item.time.month);
-    console.log(`Transformed month: ${month}`);
-
     newCards += `<div class="col carList">
       <div class="card h-100 border-light ">
       <img src="${item.img}" class="card-img-top" alt="...">
       <div class="card-body">
           <h4 class="card-title"> ${item.title}</h4>
-          <p class=" cards_time card-text">${month}月${item.time.day || ''}日,10:00 </p>
+          <p class=" cards_time card-text">${month}月${item.time.day}日,${item.time.hour}:${item.time.min} </p>
           <p class=" cards_area card-text">${item.location.city} ${item.location.dist}</p>`;
 
     // 檢查標籤是否存在，如果存在就添加按鈕
