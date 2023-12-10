@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "aaron.00366@gmail.com",
+      "password": "$2a$10$qcyqiQ8EJXSfuZxInm5PM.n5QOnzO9RA6AQVjDxuP5N0KlK.WRVq6",
+      "nikename": "aaron",
+      "id": 1
+    },
+    {
+      "email": "alley@gmail.com",
+      "password": "$2a$10$MR8DzXPLENhne0W3HvaUGe1w9sDi1xLACwwInO0f7qmSz201s33Wu",
+      "nikename": "alley",
+      "id": 2
+    }
+  ]
+}
