@@ -15,9 +15,10 @@ signUpBtn.addEventListener('click',function(e){
     signUp(signUpData)
 })
 function signUp(signUpData){
-    axios.post('http://localhost:3000/signup',signUpData)
+    axios.post('https://json-server-vercel-one-kappa.vercel.app/users',signUpData)
     .then(res =>{
         console.log(res.data)
+        alert('註冊成功')
         location.href = 'logIn.html'
     })
     .catch(err =>{
