@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="./css/cdnjs.cloudflare.com_ajax_libs_font-awesome_6.4.2_css_all.min.css">
     <link rel="stylesheet" href="./css/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/activity-detail.js"></script>
+ 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="container-fluid py-2">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
             <img src="./img/LOGO.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#">餐廳活動</a>
+                <a class="nav-link text-white" aria-current="page" href="./餐廳活動.html">餐廳活動</a>
             </li>
             </ul>
             <ul class="navbar-nav align-items-center">
@@ -49,7 +52,7 @@
             <div class="col-lg-6">
                 <div class="d-flex justify-content-between">
                     <div class="text-white text-center" aria-current="page">
-                        <span class="rounded-circle p-2 tagBg d-flex justify-content-center align-items-center" style="width: 56px;height: 56px;">
+                        <span class="rounded-circle p-2 tagBg d-flex justify-content-center align-items-center" style="width: 40px;height: 40px;">
                             <i class="fa-solid fa-user fs-4"></i>
                         </span>
                     </div>
@@ -64,10 +67,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card border-light mt-4">
-                    <img src="./img/img.png" class="card-img-top" alt="...">
+                <div id="activity_detail" class="card border-0 mt-4">
+                    <img src="./img/img.png" style="height:200px;
+                    overflow: hidden;" class="card-img-top" alt="...">
                     <div class="card-body bg-white">
-                        <h4 class="card-title">勞瑞斯牛肋排餐廳</h4>
+                        <h4 class="card-title">瑞斯牛肋排餐廳</h4>
                         <div class="cards_area card-text">106台北市大安區大安路一段116巷17號 </div>
                         <div class="cards_time card-text">十月4日,10:00 </div>
                     </div>

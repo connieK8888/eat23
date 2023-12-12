@@ -42,9 +42,9 @@ function renderData(response) {
             <h4 class="card-title">${item.title}</h4>
             <p class=" cards_time card-text">${item.time.month}月${item.time.day}日,${item.time.hour}:${item.time.min} </p>
             <p class=" cards_area card-text">${item.location.city} ${item.location.dist}</p>
-            <button type="button" class="btn lightRed">愛吃肉</button>
-            <button type="button" class="btn lightRed">Buffet</button>
-            <button type="button" class="btn lightRed">米其林</button>
+            <button type="button" style="margin: 0 5px 3px 0;" class="btn lightRed">愛吃肉</button>
+            <button type="button" style="margin: 0 5px 3px 0;" class="btn lightRed">Buffet</button>
+            <button type="button" style="margin: 0 5px 3px 0;" class="btn lightRed">米其林</button>
             <br>
             <a href="#" class="cards_info">查看更多</a>
         </div>

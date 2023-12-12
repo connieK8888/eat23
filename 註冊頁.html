@@ -53,7 +53,7 @@
             <div class="text-center p-3 fs-4">
                 <a href="" class="text-black">登入</a><span> | </span><a href="" class="text-black">註冊</a>
             </div>
-            <form class="w-75 mx-auto">
+            <form class="w-75 mx-auto" onsubmit="return false;">
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">會員帳號</label>
                     <div class="col-sm-10">
@@ -133,12 +133,33 @@
                 </div>
                 <div class="btnGroup text-center">
                     <button type="submit" class="btn btnEat text-white">確認資料</button>
-                    <button type="submit" class="btn btn-secondary">返回</button>
+                    <button type="submit" class="btn btn-secondary" onclick="redirectToPage('./index.html')">
+                        返回</button>
                 </div>
             </form>
         </div>
     </div>
+    <script>
+    function redirectToPage(url) {
+        window.location.href = url;
+  }
+    </script>
     <script src="./js/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
     <script src="./js/cdnjs.cloudflare.com_ajax_libs_font-awesome_6.4.2_js_all.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        function signUp(){
+            axios.post("http://localhost:3000/user",{
+                "email": "olivier@mail.com",
+                "password": "bestPassw0rd" 
+            })
+            .then(function(response){
+                console.log(response.data)
+            })
+            .catch(function(error) {
+            console.error(error);
+});
+        }
+    </script>
 </body>
 </html>

@@ -47,12 +47,12 @@ function renderData(response) {
     if (item.Tag && item.Tag.length > 0) {
       // 只顯示前三個 Tag
       for (let i = 0; i < Math.min(item.Tag.length, 3); i++) {
-        newCards += `<button type="button" class="btn lightRed">${item.Tag[i]}</button>`;
+        newCards += `<button style="margin: 0 5px 3px 0;" type="button" class="btn lightRed">${item.Tag[i]}</button>`;
       }
     }
 
     newCards += `<br>
-      <a href="../活動詳細頁-參加端.html" class="cards_info">查看更多</a>
+      <a href="../活動詳細頁-參加端.html?id=${item.title}" class="cards_info">查看更多</a>
     </div>
   </div>
 </div>`;
