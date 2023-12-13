@@ -1,28 +1,37 @@
 {
-  "users": [
+  "activities": [
     {
-      "email": "aaron.00366@gmail.com",
-      "password": "$2a$10$qcyqiQ8EJXSfuZxInm5PM.n5QOnzO9RA6AQVjDxuP5N0KlK.WRVq6",
-      "nikename": "aaron",
-      "id": 1
+      "id": 1,
+      "name": "勞瑞斯牛肋排餐廳",
+      "date": "十月4日",
+      "time": "10:00",
+      "location": "台北市",
+      "image": "./img/img.png"
     },
     {
-      "email": "alley@gmail.com",
-      "password": "$2a$10$MR8DzXPLENhne0W3HvaUGe1w9sDi1xLACwwInO0f7qmSz201s33Wu",
-      "nikename": "alley",
-      "id": 2
+      "id": 2,
+      "name": "蔬食天堂",
+      "date": "2023/10/20",
+      "time": "中午12:30",
+      "location": "台北市",
+      "image": "./img/img.png"
     },
     {
-      "email": "bobo@gmail.com",
-      "password": "$2a$10$aBHci02q3epliGYanqCfVejQuFsDaZXyK65k6Y9p.rBIdrTvfFKbi",
-      "nikename": "bobo",
-      "id": 3
+      "id": 3,
+      "name": "美食之旅",
+      "date": "2023/10/22",
+      "time": "下午2:00",
+      "location": "新北市",
+      "image": "./img/img.png" 
     },
     {
-      "email": "bobo1@gmail.com",
-      "password": "$2a$10$cHoqHXzT5TIgPRGYNRJsh.FCNqRide41.noWpkjRymBYre4vJJjge",
-      "nikename": "bobo1",
-      "id": 4
+      "id": 4,
+      "name": "自然探險",
+      "date": "2023/10/25",
+      "time": "早上9:00",
+      "location": "新竹縣",
+      "image": "./img/img.png" 
     }
   ]
 }
+
