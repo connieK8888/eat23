@@ -18,20 +18,21 @@ $(document).ready(function () {
 
         // Render similar activities
         similarActivities.forEach(function (activity) {
-            var activityCard = $('<div>').addClass('d-flex flex-wrap my-4');
-    
-            var imageDiv = $('<div>').addClass('mx-3').append($('<img>').attr('src', activity.image).attr('alt', '').css('width', '25%')); // Resize image here
-            activityCard.append(imageDiv);
+            var activityCard = $('<div>').addClass('d-flex flex-row align-items-center my-4');
         
-            var detailsDiv = $('<div>').addClass('mx-3');
+            var imageDiv = $('<div>').addClass('flex-shrink-0').append($('<img>').attr('src', activity.image).attr('alt', '').css('width', '150px')); // 使用固定寬度
+        
+            var detailsDiv = $('<div>').addClass('flex-grow-1 ms-3'); // 使用 flex-grow 並調整間距
             detailsDiv.append($('<h5>').addClass('fw-bold').text(activity.name));
             detailsDiv.append($('<div>').addClass('fs-6 text-secondary').text('活動日期：' + activity.date));
             detailsDiv.append($('<div>').addClass('fs-6 text-secondary').text('活動時間：' + activity.time));
             detailsDiv.append($('<div>').addClass('fs-6 text-secondary').text('活動地點：' + activity.location));
+        
+            activityCard.append(imageDiv);
             activityCard.append(detailsDiv);
         
-            similarActivitiesContainer.append(activityCard);
-        });
+            $('.similar-activities').append(activityCard);
+        });        
     });
 
     // "我要報名" button handling

@@ -6,7 +6,7 @@
       "date": "十月4日",
       "time": "10:00",
       "location": "台北市",
-      "image": "./img/img.png"
+      "image": "./img/勞瑞斯牛排.jpeg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "date": "2023/10/20",
       "time": "中午12:30",
       "location": "台北市",
-      "image": "./img/img.png"
+      "image": "./img/蔬食天堂.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "date": "2023/10/22",
       "time": "下午2:00",
       "location": "新北市",
-      "image": "./img/img.png" 
+      "image": "./img/新北.jpeg" 
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "date": "2023/10/25",
       "time": "早上9:00",
       "location": "新竹縣",
-      "image": "./img/img.png" 
+      "image": "./img/瑪格.jpg" 
     }
   ]
 }
