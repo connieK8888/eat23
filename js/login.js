@@ -19,11 +19,11 @@ loginBtn.addEventListener('click',function(e){
 function login(loginData){
     axios.post('https://json-server-vercel-one-kappa.vercel.app/login',loginData)
     .then(res =>{
-        token = res.data.accessToken
-        id = res.data.user.id
-        console.log(res.data)
-        alert('登入成功')
-        location.href = 'index.html'
+        token = res.data.accessToken;
+        id = res.data.user.id;
+        console.log(res.data);
+        alert('登入成功');
+        location.href = 'index.html';
     })
     .catch(err =>{
         console.log(err)
